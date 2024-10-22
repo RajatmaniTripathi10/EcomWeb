@@ -1,0 +1,68 @@
+/* Smaller logo section container */
+.logo-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%; /* Full width of parent */
+    height: 200px; /* Smaller height for logo section */
+    overflow: hidden; /* Hide overflow */
+    margin: 20px 0; /* Add some margin above and below */
+}
+
+/* Logo list container */
+.logo-list {
+    display: flex;
+    gap: 20px; /* Reduce the space between logos */
+    transition: transform 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove bullet points */
+}
+
+/* Arrow button styles */
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 5px; /* Smaller padding for arrows */
+    z-index: 1;
+    font-size: 16px; /* Smaller arrow size */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Left arrow position */
+.arrow-button.left {
+    left: 10px;
+}
+
+/* Right arrow position */
+.arrow-button.right {
+    right: 10px;
+}
+
+/* Hover effect for arrows */
+.arrow-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* Logo styles */
+.logo-image {
+    max-width: 170px; /* Smaller width for the logos */
+    height: auto;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.logo-image:hover {
+    opacity: 1;
+}

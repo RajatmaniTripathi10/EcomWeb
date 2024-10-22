@@ -1,0 +1,59 @@
+.body-content {
+    text-align: center; /* Center the content */
+    padding: 20px; /* Add some padding */
+    background-color: aqua;
+}
+
+.announcement {
+    font-size: 2.5em; /* Make the h4 text big */
+    font-weight: bold; /* Make it bold for emphasis */
+}
+
+.offer {
+    font-size: 1.5em; /* Style the h6 tag for offers */
+    color: #ff5733; /* Optional: Change color to make it stand out */
+    margin: 10px 0; /* Add some margin */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Space between the buttons */
+    margin-top: 10px; /* Add margin above the buttons */
+}
+
+/* Style the buttons */
+.button-container button {
+    padding: 10px 20px; /* Add padding to the buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add a slight curve to the corners */
+    cursor: pointer; /* Change cursor to a pointing hand on hover */
+}
+
+/* Style the SHOP NOW button */
+.button-container button:first-child {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+}
+
+/* Style the FIND MORE button */
+.button-container button:last-child {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Add hover effects */
+.button-container button:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+/* Specific hover colors */
+.button-container button:first-child:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.button-container button:last-child:hover {
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text on hover */
+}
