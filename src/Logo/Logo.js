@@ -1,11 +1,13 @@
 import React, { useRef } from 'react';
-import Chanel from '../Assests/Chanel.png';
-import Ck from '../Assests/Ck.png';
-import Nike from '../Assests/Nike.jpg';
-import RL from '../Assests/RL.jpg';
-import Levis from '../Assests/Levis_logo.png'
-import versace from '../Assests/versace.jpeg'
-import puma from '../Assests/Puma.png'
+import Chanel from '../Assests/Logo/Chanel.png';
+import Ck from '../Assests/Logo/Ck.png';
+import Nike from '../Assests/Logo/Nike.jpg';
+import RL from '../Assests/Logo/RL.jpg';
+import Levis from '../Assests/Logo/Levis_logo.png';
+import versace from '../Assests/Logo/versace.jpeg';
+import puma from '../Assests/Logo/Puma.png';
+import GS from '../Assests/Logo/GymShark.png';
+import LV from '../Assests/Logo/LV.png';
 import './Logo.css';
 
 const Logo = () => {
@@ -16,7 +18,7 @@ const Logo = () => {
         if (logoListRef.current) {
             logoListRef.current.scrollBy({
                 left: -300, // Adjust the scroll amount
-                behavior: 'smooth'
+                behavior: 'smooth',
             });
         }
     };
@@ -26,7 +28,7 @@ const Logo = () => {
         if (logoListRef.current) {
             logoListRef.current.scrollBy({
                 left: 300, // Adjust the scroll amount
-                behavior: 'smooth'
+                behavior: 'smooth',
             });
         }
     };
@@ -45,9 +47,10 @@ const Logo = () => {
                 <div><img className="logo-image" src={Nike} alt="Nike" /></div>
                 <div><img className="logo-image" src={RL} alt="RL" /></div>
                 <div><img className="logo-image" src={Levis} alt="Levis" /></div>
-                <div><img className="logo-image" src={versace} alt="Vercase" /></div>
+                <div><img className="logo-image" src={versace} alt="Versace" /></div>
                 <div><img className="logo-image" src={puma} alt="Puma" /></div>
-                {/* Add more logos as needed */}
+                <div><img className="logo-image" src={GS} alt="GymShark" /></div>
+                <div><img className="logo-image" src={LV} alt="LV" /></div>
             </div>
 
             {/* Right arrow */}

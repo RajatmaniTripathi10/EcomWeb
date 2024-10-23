@@ -57,3 +57,27 @@
     background-color: #fff; /* White background on hover */
     color: #000; /* Black text on hover */
 }
+/* Style for the Header component */
+.header-background {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Style for the Logo component */
+.logo-background {
+    background-color: #e0f7fa; /* Light cyan background */
+}
+
+/* Style for the Cards component */
+.cards-background {
+    background-color: #fff8e1; /* Light yellow background */
+}
+
+/* Style for the SpecialCards component */
+.special-cards-background {
+    background-color: #e1bee7; /* Light purple background */
+}
+
+/* Style for the Footer component */
+.footer-background {
+    background-color: #c8e6c9; /* Light green background */
+}

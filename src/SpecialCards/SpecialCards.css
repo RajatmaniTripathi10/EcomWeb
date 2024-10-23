@@ -1,0 +1,53 @@
+.special-cards-section {
+    position: relative;
+    background-image: url('../Assests/Model/Model4.avif'); /* Background image */
+    background-size: cover; /* Ensure the background covers the section */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image */
+    height: 70vh; /* Reduced height from 100vh to 70vh */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Prevent overflow */
+    background-color: blue; /* Blue background */
+    padding: 30px 20px; /* Reduced padding to make the section smaller */
+}
+
+.text-content {
+    position: relative;
+    color: rgb(0, 0, 0); /* Black text color */
+    max-width: 600px; /* Reduce the width of the text container for a smaller appearance */
+    margin: 0 auto; /* Center the text content */
+    z-index: 2; /* Make sure the text is on top of the background */
+    font-size: 16px; /* Slightly reduce font size */
+    line-height: 1.6;
+    text-align: center; /* Center the text */
+}
+
+.text-content h2 {
+    font-size: 2.5em; /* Slightly reduce the title size */
+    margin-bottom: 20px;
+}
+
+.text-content h6 {
+    font-size: 1.2em; /* Slightly reduce the font size of the subtitle */
+    margin-bottom: 20px; /* Add space below the last heading */
+}
+
+/* Adjust button to appear below the text */
+.transparent-card-button {
+    padding: 8px 16px; /* Slightly reduce padding for a smaller button */
+    border: 2px solid black; /* Black border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: transparent; /* Transparent background */
+    color: black; /* Black text */
+    cursor: pointer; /* Pointer on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: inline-block; /* Ensure inline-block behavior */
+    margin-top: 20px; /* Space between text and button */
+}
+
+/* Hover effect */
+.transparent-card-button:hover {
+    background-color: black; /* Black background on hover */
+    color: white; /* White text on hover */
+}

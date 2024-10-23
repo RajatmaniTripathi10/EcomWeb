@@ -5,19 +5,37 @@
     align-items: center;
     position: relative;
     width: 100%; /* Full width of parent */
-    height: 200px; /* Smaller height for logo section */
+    height: 200px; /* Adjust height for logo section */
     overflow: hidden; /* Hide overflow */
     margin: 20px 0; /* Add some margin above and below */
 }
 
-/* Logo list container */
+/* Logo list container with hidden scrollbar */
 .logo-list {
     display: flex;
-    gap: 20px; /* Reduce the space between logos */
+    gap: 20px; /* Space between logos */
     transition: transform 0.5s ease-in-out;
     padding: 0;
     margin: 0;
     list-style-type: none; /* Remove bullet points */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    width: 100%; /* Set full width to make the logos scroll */
+    white-space: nowrap; /* Prevent logos from wrapping to a new line */
+}
+
+/* Hide scrollbar in webkit browsers (Chrome, Safari) */
+.logo-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbar in Firefox */
+.logo-list {
+    scrollbar-width: none; /* Firefox scrollbar hiding */
+}
+
+/* Prevent logos from shrinking as more are added */
+.logo-list div {
+    flex-shrink: 0; /* Prevent the logos from shrinking */
 }
 
 /* Arrow button styles */
@@ -56,7 +74,7 @@
 
 /* Logo styles */
 .logo-image {
-    max-width: 170px; /* Smaller width for the logos */
+    max-width: 150px; /* Adjust width for smaller logos */
     height: auto;
     object-fit: contain;
     opacity: 0.8;

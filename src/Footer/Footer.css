@@ -1,0 +1,69 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f8f8f8; /* Light background */
+}
+
+.brand-section h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.lists-container {
+    display: flex;
+    gap: 50px; /* Space between "For Her" and "For Him" */
+}
+
+.list-section ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.text-button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    color: #000; /* Black text */
+    font-size: 16px;
+    cursor: pointer; /* Pointer on hover */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+    padding: 0; /* Remove button padding */
+}
+
+.text-button:hover {
+    color: #007bff; /* Change color on hover */
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+.subscribe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left */
+}
+
+.subscribe-section input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px; /* Optional: Set a fixed width for the input */
+}
+
+/* Style for the Subscribe Button */
+.subscribe-button {
+    padding: 10px 20px; /* Adds padding for button size */
+    border: 2px solid #171818; /* Adds a blue border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: transparent; /* Transparent background */
+    color: #000000; /* Blue text */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: inline-block; /* Ensure inline-block behavior */
+    margin-top: 20px;  /* Smooth transition for hover effects */
+}
+
+.subscribe-button:hover {
+    background-color: #000000; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+}
