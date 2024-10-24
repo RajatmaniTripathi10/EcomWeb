@@ -21,6 +21,8 @@
     color: #333; /* Text color */
     text-transform: uppercase; /* Convert to uppercase for a logo feel */
     letter-spacing: 2px; /* Spacing between letters */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    /* Removed transition and hover effect */
 }
 
 .tab-buttons, .right-buttons {

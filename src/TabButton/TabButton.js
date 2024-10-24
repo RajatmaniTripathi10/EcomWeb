@@ -1,9 +1,9 @@
-const TabButton = ({ children, className }) => {
+const TabButton = ({ children, className,onClick }) => {
     return (
         <>
-            <button className={className}>{children}</button>
+            <button className={className} onClick={onClick}>{children}</button>
         </>
-    );
+    ); 
 };
 
 export default TabButton;
